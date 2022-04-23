@@ -1,0 +1,42 @@
+.a  {
+  color:red
+}
+.b {
+  text-decoration: none;
+   color: black;
+}
+
+.navbar {
+  margin-bottom:10px;
+   width: 100%;
+  padding:5px;
+  background-color:white;
+  font-size:30px;
+  display:flex;
+  justify-content:space-between;
+  margin-top: -15px;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.kiran{
+  height:auto;width:200px;margin-top: 10px;
+  font-size: 13px;font-family: sans-serif;font-weight: bold;color:#000000;text-decoration: none;
+  padding:20px;background-color: white;display:none;position:absolute;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.rama:hover > .kiran{
+       display: block;
+}
+.kiran > span:hover{
+  color:grey;
+  cursor: pointer;
+}
+hr{
+  border-top: 1px solid black;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
