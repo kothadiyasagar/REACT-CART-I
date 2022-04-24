@@ -1,12 +1,13 @@
 import React from "react";
 import "./pages/Footer.css"
+import { Link,NavLink } from "react-router-dom";
 const Footer = ()=>{
   return (
       <>
     <div id="footer">
         <div className="fmain">
           <div style={{color:"white"}}>
-            <h3>FAQ</h3>
+          <NavLink  className="b" to="/faq"> <h3>FAQ</h3></NavLink> 
             <h3>CONTACT</h3>
             <h3>BLOG</h3>
             <h3>LOYALTY PROGRAM</h3>
@@ -20,10 +21,10 @@ const Footer = ()=>{
           <div style={{color:"white"}}>
          <h3 style={{color:"white"}}>Be in the Know</h3>
           <div style={{display:"flex"}}>
-              <img src="https://cdn-icons-png.flaticon.com/512/60/60580.png" />
-           <img src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png"/>
-           <img src="https://friconix.com/png/fi-xnsuxx-pinterest.png"/>
-           <img src="https://www.clipartmax.com/png/full/256-2569207_instagram-icon-transparent-background-instagram-logo.png"/>
+              <img className="img1" src="https://cdn-icons-png.flaticon.com/512/60/60580.png" />
+           <img className="img1" src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png"/>
+           <img className="img1" src="https://friconix.com/png/fi-xnsuxx-pinterest.png"/>
+           <img className="img1" src="https://www.clipartmax.com/png/full/256-2569207_instagram-icon-transparent-background-instagram-logo.png"/>
           </div>
           <div style={{display:"flex",justifyContent:"space-between"}}>
               <h4>Email Address</h4>
