@@ -12,6 +12,7 @@ import Category from '../src/componet/pages/Category';
 import About from './componet/pages/About';
 import {BrowserRouter} from "react-router-dom"
 import Faq from './componet/pages/Faq';
+import Home from './componet/pages/Home';
 
 function App() {
   const[sagar,setSagar]=useState(true)
@@ -24,8 +25,8 @@ function App() {
 <BrowserRouter>
 <Navbar/>
 <Routes>
-
-  <Route path='/' element={<About/>}></Route>
+<Route path='/' element={<Home/>}></Route>
+  <Route path='/about' element={<About/>}></Route>
   <Route path='/clothing' element={<Category/>}>
 
   <Route path='/clothing/menfashion' element={<Men/>}></Route>

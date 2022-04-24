@@ -7,7 +7,7 @@ const Footer = ()=>{
     <div id="footer">
         <div className="fmain">
           <div style={{color:"white"}}>
-          <NavLink  className="b" to="/faq"> <h3>FAQ</h3></NavLink> 
+          <NavLink  style={{color:"white"}} className="b" to="/faq"> <h3>FAQ</h3></NavLink> 
             <h3>CONTACT</h3>
             <h3>BLOG</h3>
             <h3>LOYALTY PROGRAM</h3>
