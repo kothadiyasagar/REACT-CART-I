@@ -8,7 +8,7 @@ const AuthContextProvider = ({children})=>{
   
     const FechData = async(a,b)=>{
       try{
-        let response=  await fetch(`http://localhost:3000/mensData?_start=${a}&_end=${b}`,{
+        let response=  await fetch(`http://localhost:4000/mensData?_start=${a}&_end=${b}`,{
       })
       
         let data = await response.json()

@@ -26,9 +26,7 @@ const Navbar = ()=>{
                         <hr></hr>
                         <span> Paintings</span>
                         <br></br>
-                        <hr></hr>
-                       
-                       
+                        <hr></hr>   
                     </div>
          </div>
          
