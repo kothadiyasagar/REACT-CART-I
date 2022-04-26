@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../Context/AuthContexProvider";
 import './Electronic.css'
+import { useNavigate } from "react-router-dom"
+import { Link,NavLink, Outlet } from "react-router-dom";
 
 
 const Electronic =()=>{
@@ -19,7 +21,7 @@ const Electronic =()=>{
            {fech.map((item,index,)=>{
             return(
                 <>
-                <div>
+                <div onClick={}>
                 <img className="img2" src={item.image_url}/>
                 <h3 style={ {textAlign:"center"}}>{item.name}</h3>
                 <div style={{display:"flex" ,justifyContent:"space-around"}}>
