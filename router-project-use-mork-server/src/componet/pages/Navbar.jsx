@@ -7,7 +7,8 @@ const Navbar = ()=>{
 
     return (
         <>
-        <div style={{background:"rgb(198,156,109)", color:"white",marginTop:"0px",textAlign:"center",marginBottom:"10px",position:"fixed",width:"100%",height:"30px"}}>
+        <div style={{background:"rgb(198,156,109)", color:"white",marginTop:"10px",textAlign:"center",marginBottom:"10px",position:"fixed"
+        ,width:"100%",height:"30px"}}>
         <p style={{marginTop:"2px"}}>FREE INDIA SHIPPING $199+ | EASY RETURNS | WORTH HOLDING ONTO & OFFER 30% APPLY CODE MASAI-30</p>
         </div>
         <div className="navbar">

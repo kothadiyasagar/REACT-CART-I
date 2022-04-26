@@ -2,8 +2,6 @@ import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../Context/AuthContexProvider";
 import { Link,NavLink, Outlet } from "react-router-dom";
 import './Men.css'
-
-
 const Men =()=>{
     console.log("123")
      const {FechData,fech}=useContext(AuthContext)
@@ -11,11 +9,9 @@ const Men =()=>{
     let f=14
     useEffect(()=>{
         FechData(e,f)
-    
-    },[])
+     },[])
     console.log(fech)
-
-    return(
+  return(
         <>
            <div className="menmain">
            {fech.map((item,index,)=>{
@@ -38,5 +34,4 @@ const Men =()=>{
         </>
     )
 }
-
 export default Men
