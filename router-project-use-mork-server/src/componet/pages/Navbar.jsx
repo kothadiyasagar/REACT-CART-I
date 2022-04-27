@@ -1,9 +1,14 @@
 import React from "react";
 import { Link,NavLink } from "react-router-dom";
+import {useState,useContext} from "react"
+import { AuthContext } from "../Context/AuthContexProvider";
 import "./Navbar.css" 
 
 const Navbar = ()=>{
+//   const [ta , setTa]=usestate(true)
+const {FechData,fech,Add,add}=useContext(AuthContext)
 
+const [ta,setTa] = useState(true)
 
     return (
         <>
@@ -32,7 +37,8 @@ const Navbar = ()=>{
          
           {/* <NavLink to="/post/mobile">Post</NavLink> */}
           {/* <NavLink  style={({isActive})=>{return{color:isActive ?"white":""}}}to="/post/mobile/1">Post</NavLink> */}
-         <NavLink  to="/addToCard">
+     <NavLink  className="b" to="/signup">{ta ? "signup":"signout"}</NavLink>
+         <NavLink  to="/shoppingcart">
          <img style={{width:"50px"}} src="https://www.freeiconspng.com/thumbs/shopping-cart-icon/shopping-cart-icon-30.png"></img>
              </NavLink> 
         </div>

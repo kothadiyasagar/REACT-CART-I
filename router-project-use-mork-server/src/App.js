@@ -14,6 +14,8 @@ import {BrowserRouter} from "react-router-dom"
 import Faq from './componet/pages/Faq';
 import Home from './componet/pages/Home';
 import CustomProduct from '../src/componet/pages/CustomProduct ';
+import Card from '../src/componet/pages/Card';
+import Signup from './componet/pages/Signup';
 
 function App() {
   const[sagar,setSagar]=useState(true)
@@ -33,6 +35,8 @@ function App() {
    <Route path='/faq' element={<Faq/>}></Route>
     <Route path='/electronic/:id' element={<CustomProduct/>}></Route> 
     <Route path="*" element={< h1 style={{marginTop:"120px"}}>Error 404 page not found</h1>}></Route>
+    <Route path='/shoppingcart' element={<Card/>}></Route>
+    <Route path='/signup' element={<Signup/>}></Route>
   </Routes>
   <Footer/>  
 </BrowserRouter>
